@@ -54,7 +54,7 @@
                             <td><h5>Status Peminjaman</h5></td>
                             <td><h5>: <?php echo $result['statuspeminjaman'];?></h5></td>
                         </tr>
-                    </table>
+                    </table>    
                 </div>
             </div>
         </div>
