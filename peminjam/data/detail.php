@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="../../asset/css/bootstrap.css">
     <script src="../../asset/js/bootstrap.css"></script>
   </head>
-  <body>
+  <body style="background-color: #638889;">
 
-    <div class="container" style="margin-top: 15rem;">
-        <div class="card">
+    <div class="container" style="margin-top: 6rem;">
+        <div class="card" style="margin: auto; width: 700px;">
             <div class="row m-4">
                 <?php
                     include '../../koneksi/koneksi.php';
@@ -49,7 +49,7 @@
                             <td><h5>Tahun Terbit</h5></td>
                             <td><h5>: <?php echo $result['tahunterbit'];?></h5></td>
                         </tr>
-                    </table>
+                    </table><hr>
                 </div>
             </div>
         </div>

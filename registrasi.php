@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="asset/css/bootstrap.css">
     <script src="asset/js/bootstrap.css"></script>
   </head>
-  <body>
+  <body style="background-color: #944E63;">
 
     <div class="container">
         <div class="conten">
-            <div class="card text-black" style="margin: auto; width: 600px; margin-top: 8rem; background-color: pink;">
+            <div class="card text-white" style="margin: auto; width: 600px; margin-top: 3rem; margin-bottom: 2rem; background-color: #B47B84;">
                 <div class="row">
                     <div class="col m-3">
                         <h2>Silahkan Isi Data Diri Anda!</h2>
@@ -45,9 +45,9 @@
                             <option value="admin">Admin</option>
                         </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-danger">Simpan</button>
                     </form>
-                    <P class="mt-3">already have an account <a href="index.php" class="btn btn-primary text-white">Login!</a></p>
+                    <P class="mt-3">already have an account <a href="index.php" class="btn btn-danger text-white">Login!</a></p>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Peminjaman</title>
+</head>
+<body style="background-color: #637A9F;">
+<nav class="navbar navbar-expand-lg bg-light border-bottom border-body" data-bs-theme="light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index_pts.php">Dashboard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>
+
 <?php
   include 'layout/header.php';
 ?>
 
 <div class="container">
-    <div class="row" style="margin-top: 1rem;">
+    <div class="row text-white" style="margin-top: 1rem;">
     <div class="col">
-        <h2>Data Peminjam</h2>
-        <a href="data/pinjam_buku.php" class="btn btn-success mt-3">Tambah Peminjaman</a>
+        <h4>Data Peminjam</h4>
+        <a href="data/pinjam_buku.php" class="btn btn-danger mt-3">Tambah Peminjaman</a>
         <table class="table my-2">
             <thead  class="table table-primary  ">
                 <tr>

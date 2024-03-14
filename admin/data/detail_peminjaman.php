@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="../../asset/css/bootstrap.css">
     <script src="../../asset/js/bootstrap.css"></script>
   </head>
-  <body>
-
-    <div class="container" style="margin-top: 5rem;">
-        <div class="card">
+  <body style="background-color: #436850;">
+    <div class="container" style="margin-top: 6rem;">
+    <div class="card" style="margin: auto; width: 700px;">
             <div class="row m-4">
                 <?php
                     include '../../koneksi/koneksi.php';
@@ -50,7 +49,7 @@
                             <td><h5>Tanggal Pengembalian</h5></td>
                             <td><h5>: <?php echo $result['tglpengembalian'];?></h5></td>
                         </tr>
-                        <tr class="bg-warning text-white">
+                        <tr class="bg-success text-white">
                             <td><h5>Status Peminjaman</h5></td>
                             <td><h5>: <?php echo $result['statuspeminjaman'];?></h5></td>
                         </tr>

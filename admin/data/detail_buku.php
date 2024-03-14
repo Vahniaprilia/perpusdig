@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="../../asset/css/bootstrap.css">
     <script src="../../asset/js/bootstrap.css"></script>
   </head>
-  <body>
-
-    <div class="container" style="margin-top: 5rem;">
-        <div class="card">
+  <body style="background-color: #C68484;">
+    <div class="container" style="margin-top: 8rem;">
+        <div class="card" style="margin: auto; width: 700px;">
             <div class="row m-4">
                 <?php
                     include '../../koneksi/koneksi.php';
@@ -22,7 +21,7 @@
                     $query = mysqli_query($conn, "SELECT * FROM buku WHERE idbuku='$idbuku' ");
                     $result = mysqli_fetch_array($query);
                 ?>
-                <div class="col" style="margin-top: 5rem;">
+                <div class="col" style="margin-top: 1rem;">
                 <h2>Detail Buku</h2>
                 <a href="../buku.php" class="btn btn-danger">Kembali</a><hr>
                     <table>

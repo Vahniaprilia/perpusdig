@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col text-center mt-3">
                 <h3>LAPORAN DATA ANGGOTA</h3>
-                <h3>APLIKASI PERPUSTAKAAN DIGITAL</h3>
+                <h3>PERPUSTAKAAN DIGITAL</h3>
                 <span>Data ini merupakan data keseluruhan member perpustakaan</span>
             </div>
         </div>

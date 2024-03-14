@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../../asset/css/bootstrap.css">
     <script src="../../asset/js/bootstrap.css"></script>
   </head>
-  <body>
-        <div class="container" style="margin-top: 5rem;">
-            <div class="card">
+  <body style="background-color: #1B3C73;">
+        <div class="container" style="margin-top: 6rem;">
+            <div class="card" style="margin: auto; width: 700px;">
                 <div class="row m-4">
                     <?php 
                     include '../../koneksi/koneksi.php';    
@@ -21,9 +21,8 @@
                     $query = mysqli_query($conn, "SELECT * FROM user WHERE iduser='$iduser' ");
                     $result = mysqli_fetch_array($query);
                     ?>
-                    <div class="col" style="margin-top: 5rem;">
+                    <div class="col" style="margin-top: 1rem;">
                                  <h2>Detail Anggota</h2>    
-                                 <a href="../anggota.php" class="btn btn-danger">Kembali</a>
                                  <hr>
                         <table>
                             <tr>
@@ -55,6 +54,8 @@
                                 <td><h5>: <?php echo $result['level'];?></h5></td>
                             </tr>
                         </table>
+                        <hr>
+                        <a href="../anggota.php" class="btn btn-primary">Kembali</a>
                     </div>
                 </div>
             </div>   

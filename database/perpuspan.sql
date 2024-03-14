@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Mar 2024 pada 18.34
+-- Waktu pembuatan: 14 Mar 2024 pada 18.25
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -33,16 +33,15 @@ CREATE TABLE `buku` (
   `penulis` varchar(255) NOT NULL,
   `penerbit` varchar(255) NOT NULL,
   `tahunterbit` int(11) NOT NULL,
-  `buku` varchar(255) NOT NULL,
-  `foto` varchar(255) NOT NULL
+  `foto` varchar(10000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `buku`
 --
 
-INSERT INTO `buku` (`IDbuku`, `judul`, `penulis`, `penerbit`, `tahunterbit`, `buku`, `foto`) VALUES
-(1, 'Laut Bercerita', 'Tereliyee', 'Gramedia', 2017, 'Novel', 'coverlaut.jpeg');
+INSERT INTO `buku` (`IDbuku`, `judul`, `penulis`, `penerbit`, `tahunterbit`, `foto`) VALUES
+(1, 'Hilmy Milann', 'Nadia Ristivani', 'Gramedia', 2020, 'hilmy.jpeg');
 
 -- --------------------------------------------------------
 
@@ -103,7 +102,9 @@ CREATE TABLE `peminjaman` (
 
 INSERT INTO `peminjaman` (`IDpeminjaman`, `IDuser`, `IDbuku`, `nama`, `tglpeminjaman`, `tglpengembalian`, `statuspeminjaman`) VALUES
 (1, 1, 1, 'Jenrina', '2024-03-08', '2024-03-15', 'dipinjam'),
-(11, 3, 2, 'kiwiyuwa', '2024-03-21', '2024-03-28', 'dipinjam');
+(2, 3, 2, 'kiwiyuwa', '2024-03-21', '2024-03-28', 'dipinjam'),
+(13, 2, 1, 'kongsi', '2024-03-14', '2024-03-21', 'dipinjam'),
+(15, 2, 0, 'namin', '2024-04-05', '2024-04-12', 'dipinjam');
 
 -- --------------------------------------------------------
 
@@ -143,7 +144,8 @@ INSERT INTO `user` (`IDuser`, `username`, `password`, `email`, `namalengkap`, `a
 (1, 'jenrina', '1234', 'jenrina@gmail.com', 'jenrina aulia', 'Seoul, Korea Selatan', 'peminjam'),
 (2, 'karinjaa', '1234', 'pani@gmail.com', 'karinaaja', 'Busan ', 'admin'),
 (4, 'jaeminn', '9090', 'jemin@gmail.com', 'Jemina', 'Bekasi', 'petugas'),
-(5, 'terwin', '6789', 'tu@gmail.com', 'Winter', 'Busan ', 'peminjam');
+(5, 'terwin', '6789', 'tu@gmail.com', 'Winter', 'Busan ', 'peminjam'),
+(6, 'jaemine', '6789', 'jeno@gmail.com', 'Jenolee', 'beijing', 'peminjam');
 
 --
 -- Indexes for dumped tables
@@ -209,7 +211,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `IDbuku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `IDbuku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategoribuku_relasi`
@@ -227,7 +229,7 @@ ALTER TABLE `koleksipribadi`
 -- AUTO_INCREMENT untuk tabel `peminjaman`
 --
 ALTER TABLE `peminjaman`
-  MODIFY `IDpeminjaman` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `IDpeminjaman` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `ulasanbuku`
@@ -239,7 +241,7 @@ ALTER TABLE `ulasanbuku`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `IDuser` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `IDuser` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

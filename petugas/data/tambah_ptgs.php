@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../../asset/css/bootstrap.css">
     <script src="../../asset/js/bootstrap.css"></script>
   </head>
-  <body>
+  <body style="background-color: #687EFF;">
 
 <div class="container">
         <div class="conten">
-            <div class="card text-white" style="margin-top: 1rem; background-color: #687EFF;">
+            <div class="card text-black" style="margin-top: 1rem; margin: auto; width: 700px;">
                 <div class="row">
-                    <div class="col-sm-8 m-3">
+                    <div class="col-sm-11 m-4">
                         <h3>Silahkan Masukan data calon petugas!</h3>
                     <form action="t_ptgs.php" method="post">
                         <div class="mb-2">
